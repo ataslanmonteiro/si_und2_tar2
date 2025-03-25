@@ -19,3 +19,6 @@ function cifraCesar(texto, deslocamento) {
   function decifraCesar(texto, deslocamento) {
     return cifraCesar(texto, -deslocamento);
   }
+
+console.log(cifraCesar("Olá, mundo!", 3));
+console.log(decifraCesar("Krq, xvwulq!", 3));
