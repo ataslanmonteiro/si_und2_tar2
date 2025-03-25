@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teste da Cifra de César</title>
+</head>
+<body>
+    <h1>Teste da Cifra de César</h1>
+    <div id="resultadoCifra"></div>
+    <div id="resultadoDecifra"></div>
+
+    <script src="cifraCesar.js"></script>
+    <script>
+        const textoOriginal = "Mensagem secreta!";
+        const deslocamento = 4;
+        const textoCifrado = cifraCesar(textoOriginal, deslocamento);
+        const textoDecifrado = decifraCesar(textoCifrado, deslocamento);
+
+        document.getElementById("resultadoCifra").textContent = `Texto cifrado: ${textoCifrado}`;
+        document.getElementById("resultadoDecifra").textContent = `Texto decifrado: ${textoDecifrado}`;
+    </script>
+</body>
+</html>
